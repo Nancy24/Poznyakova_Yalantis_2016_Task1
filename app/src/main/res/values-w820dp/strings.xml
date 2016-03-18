@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">P002_Poznyakova</string>
+    <string name="komun">Комунальне господарство</string>
+    <string name="work">В роботі</string>
+    <string name="created">Сторено</string>
+    <string name="f_date">25 лютого 2016</string>
+    <string name="registered">Зареєстровано</string>
+    <string name="s_date">26 лютого 2016</string>
+    <string name="solve">Вирішити до</string>
+    <string name="t_date">29 лютого 2016</string>
+    <string name="respon">Відповідальний</string>
+    <string name="respon_name">Дніпропетровський МВК()</string>
+    <string name="large_text">Відкритий люк (біля рекламного щита), район повороту 18 та 19 трамваїв на проспект Миру з Донецького шосе</string>
+    <string-array name="urls_array">
+        <item>http://img2.wikia.nocookie.net/__cb20070317195216/starwars/nl/images/6/6e/Vos_Gesal_Street.jpg</item>
+        <item>http://vignette2.wikia.nocookie.net/starwars/images/0/0b/Underlevelscene.JPG/revision/latest?cb=20060712233456</item>
+        <item>http://vignette3.wikia.nocookie.net/starwars/images/4/4a/Coruscant_Underworld_concept_art.jpg/revision/latest?cb=20130523085925</item>
+    </string-array>
+</resources>
+

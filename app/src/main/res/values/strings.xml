@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CE-1257218</string>
+    <string name="work">In work</string>
+    <string name="comun">Communal economy</string>
+    <string name="created">Created</string>
+    <string name="registered">Registered</string>
+    <string name="solve">Solve until</string>
+    <string name="respon">Responsible</string>
+    <string name="f_date">February 25, 2016</string>
+    <string name="s_date">February 26, 2016</string>
+    <string name="t_date">February 29, 2016</string>
+    <string name="respon_name">Dnipropetrovskiy MVK ()</string>
+    <string name="large_text">Opened hatchway (near by the billboard), the area of 18 and 19 trams turn to the Mir avenue from the Donetsk roadway</string>
+    <string-array name="urls_array">
+        <item>http://img-fotki.yandex.ru/get/9150/78948279.df/0_82fdc_a7115bde_XXL.jpg</item>
+        <item>http://www.telegraf.in.ua/uploads/posts/2014-04/thumbs/1398156250_azrovskiy-bilbord-kopya.jpg</item>
+    </string-array>
+</resources>
