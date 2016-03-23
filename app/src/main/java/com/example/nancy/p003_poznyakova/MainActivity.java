@@ -13,9 +13,11 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-
+//[Comment] Wrong status bar color
+//[Comment] Something wrong with layout paddings. Toolbar shouldn't have paddings
+//[Comment] Please add space between images in recycler view
 public class MainActivity extends AppCompatActivity {
-    private String lang;
+    private String lang; //[Comment] Unused object
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +26,14 @@ public class MainActivity extends AppCompatActivity {
         setTitle("CE-1257218");
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
-        final ArrayList<View> views = getAllChildren(findViewById(R.id.main_layout));
+        final ArrayList<View> views = getAllChildren(findViewById(R.id.main_layout)); //[Comment] Please use abstraction instead of realization
         for (int i = 0; i < views.size(); i++) {
             views.get(i).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     String text;
                     int id = v.getId();
-                    if (id > 0) {
+                    if (id > 0) { //[Comment] I'm not sure that id can be < 0
                         text = getResources().getResourceName(v.getId());
                         Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
                     }
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar(); //[Comment] Please optimize import
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                Toast.makeText(this, "Back button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Back button", Toast.LENGTH_SHORT).show(); //[Comment] Hardcode
                 onBackPressed();
                 return true;
             default:

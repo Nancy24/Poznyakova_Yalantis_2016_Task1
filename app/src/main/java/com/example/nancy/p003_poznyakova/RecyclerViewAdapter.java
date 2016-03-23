@@ -19,7 +19,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public RecyclerViewAdapter(Context context, String[] dataSet) {
         mInflater = LayoutInflater.from(context);
         this.mContext = context;
-        this.mDataSet = dataSet;
+        this.mDataSet = dataSet; //[Comment] Without this
     }
 
     @Override
@@ -47,7 +47,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(mContext, " RecyclerView's image " +
+                    Toast.makeText(mContext, " RecyclerView's image " + //[Comment] Hardcode. Please put it into strings.xml
                                     (getAdapterPosition() + 1) + ": " +
                                     (mDataSet[getAdapterPosition()]),
                             Toast.LENGTH_SHORT).show();
