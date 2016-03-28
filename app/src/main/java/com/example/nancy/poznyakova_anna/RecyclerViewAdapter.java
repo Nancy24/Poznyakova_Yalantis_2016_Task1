@@ -1,4 +1,4 @@
-package com.example.nancy.p003_poznyakova;
+package com.example.nancy.poznyakova_anna;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -18,13 +18,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public RecyclerViewAdapter(Context context, String[] dataSet) {
         mInflater = LayoutInflater.from(context);
-        this.mContext = context;
-        this.mDataSet = dataSet;
+        mContext = context;
+        mDataSet = dataSet;
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = mInflater.inflate(R.layout.layout_1, parent, false);
+        View view = mInflater.inflate(R.layout.images, parent, false);
         return new MyViewHolder(view);
     }
 
@@ -47,7 +47,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(mContext, " RecyclerView's image " +
+                    Toast.makeText(mContext, mContext.getString(R.string.image) +
                                     (getAdapterPosition() + 1) + ": " +
                                     (mDataSet[getAdapterPosition()]),
                             Toast.LENGTH_SHORT).show();

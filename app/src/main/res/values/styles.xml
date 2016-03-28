@@ -18,6 +18,10 @@
         <item name="android:paddingBottom">@dimen/tag_vertical_padding</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:background">@drawable/background</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:layout_marginBottom">@dimen/tag_vertical_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="lineStyle">
@@ -30,8 +34,10 @@
 
     <style name="Toolbar" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="titleTextAppearance">@style/Toolbar.Title</item>
-        <item name="titleMarginStart">15dp</item>
-        <item name="android:paddingRight">11dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+
     </style>
 
     <style name="Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
@@ -40,8 +46,31 @@
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+    <style name="ToolbarColoredBackArrow" parent="Toolbar">
         <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+
+    <style name="BasicTextView">
+        <item name="android:onClick">onClick</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+
+    <style name="LeftTextView">
+        <item name="android:onClick">onClick</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
 

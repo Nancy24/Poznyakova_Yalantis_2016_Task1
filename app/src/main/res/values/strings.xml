@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">CE-1257218</string>
+    <string name="image">RecyclerView image</string>
+    <string name="button">Back button</string>
     <string name="work">In work</string>
     <string name="comun">Communal economy</string>
     <string name="created">Created</string>
